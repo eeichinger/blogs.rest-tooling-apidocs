@@ -40,7 +40,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
  */
 public abstract class AbstractSwaggerSpecGenerator {
 
-    static final String SWAGGER_SPEC_OUTPUT_FILENAME = "./src/main/webapp/system/api-docs.json";
+    public static final String SWAGGER_SPEC_OUTPUT_FILENAME = "./src/main/webapp/system/api-docs.json";
 
     @Autowired
     protected WebApplicationContext applicationContext;
@@ -73,7 +73,6 @@ public abstract class AbstractSwaggerSpecGenerator {
         String strData = new String(prettyPrintJson(data), "utf-8");
 
         final File swaggerJsonPath = new File(SWAGGER_SPEC_OUTPUT_FILENAME);
-        FileUtils.deleteQuietly(swaggerJsonPath.getParentFile());
         FileUtils.deleteQuietly(swaggerJsonPath.getParentFile());
         mkdir(swaggerJsonPath);
 

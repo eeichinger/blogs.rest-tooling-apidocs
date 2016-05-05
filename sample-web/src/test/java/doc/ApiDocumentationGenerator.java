@@ -33,6 +33,7 @@ import org.junit.runners.Suite;
     SampleControllerTest.class
     // add your test classes here
     , SwaggerSpecGenerator.class
+    , SwaggerSpec2AsciiDocConverter.class
 })
 public class ApiDocumentationGenerator {
 

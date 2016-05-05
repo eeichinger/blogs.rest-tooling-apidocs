@@ -23,6 +23,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.paths.AbstractPathProvider;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -71,7 +72,7 @@ public class Swagger2Configuration {
             , "documentation for module \"Sample Web\"."
             , ""
             , ""
-            , "salzamt@example.com"
+            , new Contact("salzamt@example.com", "", "")
             , ""
             , ""
         );
