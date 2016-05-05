@@ -1,0 +1,9 @@
+:revnumber: {docVersion}
+ifndef::basedir[:basedir: {docdir}]
+
+// :docdir: = path to "start document"
+// :basedir: always points to src/docs, any relative paths referenced from within an asciidoc need to be under /src/docs
+
+include::generated/overview.adoc[]
+include::generated/paths.adoc[]
+include::generated/definitions.adoc[]
